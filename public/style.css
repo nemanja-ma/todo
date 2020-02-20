@@ -1,0 +1,15 @@
+.mika {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url(background.jpg);
+    background-position: center;
+    height: 100vh;
+    width: 1140px;
+    margin: 0 auto;
+}
+
+#root {
+    width: 600px; 
+    margin: 0px auto;
+    padding: 20px auto;
+    text-align: center;
+
+}
