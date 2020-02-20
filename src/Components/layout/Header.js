@@ -3,22 +3,11 @@ import {Link} from 'react-router-dom';
 
 function Header() {
     return(
-        <header style={headerStyle}>
+        <header>
             <h1>To Do List</h1>
-            <Link style={linkStyle} to='/'>Home</Link> | <Link style={linkStyle} to='/about'>About</Link>
+            <Link to='/'>Home</Link> | <Link to='/about'>About</Link>
         </header>
     )
-}
-
-const linkStyle = {
-    color:'white'
-}
-
-const headerStyle   = {
-    background: '#333',
-    color: 'white',
-    textAlign: 'center',
-    padding: '10px'
 }
 
 export default Header;

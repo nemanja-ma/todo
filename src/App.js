@@ -64,16 +64,20 @@ class App extends Component {
 
     return (
       <Router>
-        <div className="App">
+        <div className="app">
           <div className="container">
-            <Header />
-            <Route exact path="/" render={props => (
-              <React.Fragment>
-                <AddTodo addTodo={this.addTodo} />
-                <Todos todos={this.state.todos} markComplete={this.markComplete} delTodo={this.delTodo} />
-              </React.Fragment>
-            )} />
-            <Route path="/about" component={About} />
+            <div className="row">
+              <div className="col-12">
+                <Header />
+                <Route exact path="/" render={props => (
+                  <React.Fragment>
+                    <AddTodo addTodo={this.addTodo} />
+                    <Todos todos={this.state.todos} markComplete={this.markComplete} delTodo={this.delTodo} />
+                  </React.Fragment>
+                )} />
+                <Route path="/about" component={About} />
+              </div> 
+            </div>
           </div>
         </div>
       </Router>
